@@ -1,0 +1,29 @@
+﻿<Page x:Class="PatientJournalApplication.Pages.PageCreatePatient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PatientJournalApplication.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="PageCreatePatient">
+
+    <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock Text="First Name" Margin="0,0,5,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox Name="TBFirstName" Width="200" HorizontalAlignment="Right" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+            <TextBlock Text="Last Name" Margin="0,0,5,0" HorizontalAlignment="Left"/>
+            <TextBox Name="TBLastName" Width="200" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock Text="Patient Number" Margin="0,0,5,0"/>
+            <TextBox Name="TBPatientNumber" HorizontalAlignment="Right" Width="200"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <Button Name="BtnSave"  Content="Save" HorizontalAlignment="Left" Margin="0,0,5,0" Click="BtnSave_Click" />
+            <Button Name="BtnCancel" Content="Cancel" HorizontalAlignment="Right" Click="BtnCancel_Click"  />
+        </StackPanel>
+    </StackPanel>
+</Page>
